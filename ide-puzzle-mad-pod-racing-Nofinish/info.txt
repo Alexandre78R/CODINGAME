@@ -1,0 +1,16 @@
+La variable next checkpoint dist donne la distance entre votre pod et le prochain checkpoint (point de passage).
+La variable next checkpoint angle donne la différence d'angle entre votre orientation et l'angle entre votre pod et le prochain checkpoint.
+
+ 	Indice pour vous aider à démarrer: Algorithme en Pseudo Code
+Un algorithme simple utilisant l'angle est celui-ci :
+
+ 
+si nextCheckpointAngle > 90 or nextCheckpointAngle < -90 alors
+    thurst = 0
+sinon
+    thurst = 100
+fin si
+afficher x y thurst
+ 	Récapitulatif des nouveautés
+Vous avez maintenant accès à la distance et à l'angle au prochain checkpoint.
+
