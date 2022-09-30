@@ -1,4 +1,3 @@
-
 /**
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
@@ -22,19 +21,94 @@ while (true) {
     // To debug: console.error('Debug messages...');
 
 
-    var thurst = 0;
-    var BOOST = false;
+    // var thurst = 0;
+    // var BOOST = false;
+    // var pods = 0;
 
-    if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
-        thurst = 0;
-        BOOST = true;
-    } else {
+    // if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
+    //     thurst = 0;
+    //     BOOST = true;
+    // } else {
+    //     thurst = 100;
+    //     BOOST = true;
+    // }
+
+    // if (BOOST == true){
+    //     pods = 100;
+    // }
+
+
+    //plus tard
+    // var thurst = 0;
+    // var pods = 0;
+
+    // if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
+    //     thurst = 0;
+    //     console.log(x, y, thurst)
+    //     if (nextCheckpointDist > 100){
+    //         console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ${thurst}`+' BOOST');
+            
+    //     } else {
+    //         console.log(nextCheckpointX + ' ' + nextCheckpointY  + " " + thrust);
+    //     }
+    // } else {
+    //     thurst = 100;
+    //     if (nextCheckpointDist > 100){
+    //         console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ${thurst}`+' BOOST');
+            
+    //     } else {
+    //         console.log(nextCheckpointX + ' ' + nextCheckpointY  + " " + thrust);
+    //     }
+    // }
+
+    // if (BOOST == true){
+    //     pods = 100;
+    // }
+
+
+    // var thurst = 0;
+    // var pods = 0;
+
+    // if (nextCheckpointDist > 100){
+    //     thurst = "BOOST";
+    // }   else if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
+    //     thurst = 0;
+    // }   else {
+    //     thurst = 100;
+    // }
+
+    // console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ${thurst}`+' BOOST');
+
+
+    var thurst = 0;
+    // var BOOST = false;
+    // var pods = 0;
+
+    if (nextCheckpointAngle > 180 || nextCheckpointAngle < -180){
+        thurst = "BOOST ";
+        // BOOST = true;
+    }else if (nextCheckpointAngle > 180 || nextCheckpointAngle < -180){
         thurst = 100;
-        BOOST = true;
+    }else if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
+        thurst = 50;
+        // BOOST = true;
+    }else if (nextCheckpointAngle > 90 || nextCheckpointAngle < -90){
+        thurst = 100;
+        // BOOST = true;
     }
+
+    // if (BOOST == true){
+    //     thurst = "BOOST";
+    // }
+
+    console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ` + ` ${thurst}`);
+
     // console.log(x, y, thurst)
     // You have to output the target position
     // followed by the power (0 <= thrust <= 100)
     // i.e.: "x y thrust"
-    console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ${thurst}`);
+
+
+
+    // console.log(nextCheckpointX + ' ' + nextCheckpointY + ` ${thurst}`+' BOOST');
 }
